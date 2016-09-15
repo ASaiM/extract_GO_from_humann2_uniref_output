@@ -51,22 +51,35 @@ def format_humann2_output(args, go_annotations):
     with open(args.humann2_output, "r") as humann2_output:
         output_files = {}
         output_files['molecular_function'] = open(args.molecular_function_output_file,"w")
-        output_files['molecular_function'].write("GO id\tGO name\tAbundance\n")
-
         output_files['biological_process'] = open(args.biological_processes_output_file,"w")
-        output_files['biological_process'].write("GO id\tGO name\tAbundance\n")
-
         output_files['cellular_component'] = open(args.cellular_component_output_file,"w")
-        output_files['cellular_component'].write("GO id\tGO name\tAbundance\n")
+        output_files['molecular_function'].write("GO id\tGO name")
+        output_files['biological_process'].write("GO id\tGO name")
+        output_files['cellular_component'].write("GO id\tGO name")
+        
+        #Allow multiple operations to access humann2_output
+        humann2_output_lines = humann2_output.readlines()
 
-        for line in humann2_output.readlines()[1:]:
+        #Allow multi-sample humann2 table input; Add sample names to header
+        output_header = humann2_output_lines[0]
+        all_sample_names = output_header.split('\t')
+        for sample_name_CB in all_sample_names[1:]:
+            output_files['molecular_function'].write('\t' + sample_name_CB)
+            output_files['biological_process'].write('\t' + sample_name_CB)
+            output_files['cellular_component'].write('\t' + sample_name_CB)
+
+        for line in humann2_output_lines[1:]:
             split_line = line[:-1].split('\t')
             go_id = split_line[0]
-            abundance = split_line[1]
 
-            if go_id == "UNGROUPED":
+            #Allow ungrouped go_ids followed by species name
+            if "UNGROUPED" in go_id:
                 continue
 
+            #Allow unmapped go_ids
+            if go_id == "UNMAPPED":
+                continue
+            
             namespace = go_annotations[go_id]["namespace"]
 
             if not go_annotations.has_key(go_id):
@@ -74,9 +87,14 @@ def format_humann2_output(args, go_annotations):
                 raise ValueError(string)
 
             output_files[namespace].write(go_id + '\t')
-            output_files[namespace].write(go_annotations[go_id]["name"] + '\t')
-            output_files[namespace].write(abundance + '\n')
+            output_files[namespace].write(go_annotations[go_id]["name"])
+            
+            #Allow multi-sample humann2 table input; Add abundances to appropriate columns
+            for abundance in split_line[1:]:
+                output_files[namespace].write('\t' + abundance)
 
+            output_files[namespace].write('\n')
+            
         output_files['molecular_function'].close()
         output_files['biological_process'].close()
         output_files['cellular_component'].close()
