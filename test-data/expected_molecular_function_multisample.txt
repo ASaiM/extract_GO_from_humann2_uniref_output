@@ -1,0 +1,35 @@
+GO id	GO name	humann2_Abundance
+GO:0000150	recombinase activity	410.378
+GO:0000166	nucleotide binding	11436.73
+GO:0003674	molecular_function	915.124
+GO:0003676	nucleic acid binding	3028.702
+GO:0003735	structural constituent of ribosome	1458.582
+GO:0003824	catalytic activity	115.961
+GO:0004601	peroxidase activity	76.497
+GO:0004803	transposase activity	261.923
+GO:0004871	signal transducer activity	630.93
+GO:0004872	receptor activity	626.485
+GO:0005215	transporter activity	1448.019
+GO:0005515	protein binding	376.258
+GO:0008134	transcription factor binding	84.632
+GO:0008233	peptidase activity	1182.31
+GO:0008658	penicillin binding	144.146
+GO:0016209	antioxidant activity	65.226
+GO:0016301	kinase activity	1563.763
+GO:0016491	oxidoreductase activity	1974.832
+GO:0016740	transferase activity	2925.988
+GO:0016779	nucleotidyltransferase activity	955.37
+GO:0016787	hydrolase activity	2621.766
+GO:0016791	phosphatase activity	148.298
+GO:0016829	lyase activity	575.003
+GO:0016853	isomerase activity	1916.331
+GO:0016874	ligase activity	909.786
+GO:0017111	nucleoside-triphosphatase activity	1576.552
+GO:0019842	vitamin binding	317.739
+GO:0030170	pyridoxal phosphate binding	1071.182
+GO:0030246	carbohydrate binding	24.775
+GO:0046872	metal ion binding	4116.705
+GO:0046906	tetrapyrrole binding	183.769
+GO:0050662	coenzyme binding	1368.057
+GO:0051536	iron-sulfur cluster binding	1231.764
+GO:0090484	drug transporter activity	314.049

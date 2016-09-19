@@ -1,0 +1,40 @@
+GO id	GO name	humann2_Abundance
+GO:0000160	phosphorelay signal transduction system	1112.392
+GO:0005975	carbohydrate metabolic process	2612.697
+GO:0006091	generation of precursor metabolites and energy	1047.394
+GO:0006259	DNA metabolic process	2760.367
+GO:0006282	regulation of DNA repair	42.737
+GO:0006351	transcription, DNA-templated	0.062
+GO:0006412	translation	3280.152
+GO:0006457	protein folding	0.416
+GO:0006508	proteolysis	52.973
+GO:0006629	lipid metabolic process	1380.837
+GO:0006807	nitrogen compound metabolic process	10983.254
+GO:0006810	transport	2400.448
+GO:0006950	response to stress	954.866
+GO:0007155	cell adhesion	0.147
+GO:0007165	signal transduction	45.33
+GO:0008150	biological_process	2404.72
+GO:0008152	metabolic process	1032.981
+GO:0009058	biosynthetic process	11944.378
+GO:0009403	toxin biosynthetic process	9.096
+GO:0009405	pathogenesis	58.275
+GO:0009607	response to biotic stimulus	36.804
+GO:0009628	response to abiotic stimulus	214.593
+GO:0015948	methanogenesis	4.356
+GO:0015979	photosynthesis	44.735
+GO:0016032	viral process	16.108
+GO:0016070	RNA metabolic process	1855.223
+GO:0016226	iron-sulfur cluster assembly	87.795
+GO:0016310	phosphorylation	1372.024
+GO:0017000	antibiotic biosynthetic process	2.88
+GO:0017004	cytochrome complex assembly	29.913
+GO:0019222	regulation of metabolic process	457.39
+GO:0042221	response to chemical	315.285
+GO:0043934	sporulation	174.713
+GO:0044281	small molecule metabolic process	11741.154
+GO:0045454	cell redox homeostasis	189.125
+GO:0065003	macromolecular complex assembly	92.198
+GO:0071103	DNA conformation change	702.657
+GO:0071840	cellular component organization or biogenesis	652.492
+GO:0071973	bacterial-type flagellum-dependent cell motility	107.996
