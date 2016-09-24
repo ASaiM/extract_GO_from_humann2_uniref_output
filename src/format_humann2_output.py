@@ -64,9 +64,12 @@ def format_humann2_output(args, go_annotations):
         output_header = humann2_output_lines[0]
         all_sample_names = output_header.split('\t')
         for sample_name_CB in all_sample_names[1:]:
-            output_files['molecular_function'].write('\t' + sample_name_CB)
-            output_files['biological_process'].write('\t' + sample_name_CB)
-            output_files['cellular_component'].write('\t' + sample_name_CB)
+            #output_files['molecular_function'].write('\t' + sample_name_CB)
+            #output_files['biological_process'].write('\t' + sample_name_CB)
+            #output_files['cellular_component'].write('\t' + sample_name_CB)
+            output_files['molecular_function'].write('\tAbundance\n')
+            output_files['biological_process'].write('\tAbundance\n' )
+            output_files['cellular_component'].write('\tAbundance\n' )
 
         for line in humann2_output_lines[1:]:
             split_line = line[:-1].split('\t')
@@ -91,8 +94,9 @@ def format_humann2_output(args, go_annotations):
             
             #Allow multi-sample humann2 table input; Add abundances to appropriate columns
             for abundance in split_line[1:]:
-                round_abundance =  format(abundance, '.7')
-                output_files[namespace].write('\t' + round_abundance)
+                #round_abundance =  format(abundance, '.7')
+                #output_files[namespace].write('\t' + round_abundance)
+                output_files[namespace].write('\t' + abundance)
 
             output_files[namespace].write('\n')
             
