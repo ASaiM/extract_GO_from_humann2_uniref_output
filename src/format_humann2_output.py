@@ -98,7 +98,7 @@ def format_humann2_output(args, go_annotations):
             
             #Allow multi-sample humann2 table input; Add abundances to appropriate columns
             for abundance in split_line[1:]:
-                round_abundance =  abundance[:6]
+                round_abundance =  int(float(abundance))
                 output_files[namespace].write('\t' + round_abundance)
                 #output_files[namespace].write('\t' + abundance)
 
