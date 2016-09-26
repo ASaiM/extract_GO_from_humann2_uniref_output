@@ -20,5 +20,5 @@ install:
 script:
   - ./group_humann2_uniref_abundances_to_GO.sh -i "test-data/Merge_50_genefamilies_noSpec.tsv" -a "test-data/go_02_22_2016.obo" -s "test-data/goslim_metagenomics_02_22_2016.obo" -u "test-data/map_infogo1000_uniref50_02_22_2016.txt"  -g `which map_to_slim.py | xargs -n1 dirname` -p `which humann2 | xargs -n1 dirname` -m "test-data/molecular_function_abundances.txt" -b "test-data/biological_process_abundance.txt" -c "test-data/cellular_component_abundance.txt"
   - diff -w "test-data/molecular_function_abundances.txt" "test-data/CB_multi_expected_molecular_function_abundances.txt"
-  - diff "test-data/biological_process_abundance.txt" "test-data/CB_multi_expected_biological_process_abundance.txt"
+  - diff --ignore-matching-lines="GO_id	GO_name	S10E_Abundance	S10PA_Abundance	S1E_Abundance	S1PA_Abundance	S2E_Abundance	S2PA_Abundance	S3E_Abundance	S3PA_Abundance	S4E_Abundance	S4PA_Abundance	S5E_Abundance	S5PA_Abundance	S6E_Abundance	S6PA_Abundance	S7E_Abundance	S7PA_Abundance	S8E_Abundance	S8PA_Abundance	S9E_Abundance	S9PA_Abundance" "test-data/biological_process_abundance.txt" "test-data/CB_multi_expected_biological_process_abundance.txt"
   - diff -w "test-data/cellular_component_abundance.txt" "test-data/CB_multi_expected_cellular_component_abundance.txt"
