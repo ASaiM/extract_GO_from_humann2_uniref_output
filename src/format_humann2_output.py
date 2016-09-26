@@ -71,9 +71,9 @@ def format_humann2_output(args, go_annotations):
             #output_files['biological_process'].write('\tAbundance')
             #output_files['cellular_component'].write('\tAbundance')
             
-        output_files['molecular_function'].write('\n')
-        output_files['biological_process'].write('\n')
-        output_files['cellular_component'].write('\n')
+        #output_files['molecular_function'].write('\n')
+        #output_files['biological_process'].write('\n')
+        #output_files['cellular_component'].write('\n')
 
         for line in humann2_output_lines[1:]:
             split_line = line[:-1].split('\t')
