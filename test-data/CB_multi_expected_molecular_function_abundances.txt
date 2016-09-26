@@ -1,5 +1,4 @@
 GO_id	GO_name	S10E_Abundance	S10PA_Abundance	S1E_Abundance	S1PA_Abundance	S2E_Abundance	S2PA_Abundance	S3E_Abundance	S3PA_Abundance	S4E_Abundance	S4PA_Abundance	S5E_Abundance	S5PA_Abundance	S6E_Abundance	S6PA_Abundance	S7E_Abundance	S7PA_Abundance	S8E_Abundance	S8PA_Abundance	S9E_Abundance	S9PA_Abundance
-
 GO:0000156	phosphorelay response regulator activity	18	29	22	14	34	12	12	93	22	26	35	11	42	20	14	83	33	702	25	12
 GO:0000166	nucleotide binding	47974	45587	43176	44808	41699	41575	40368	42183	39034	47057	50572	45978	41093	43072	43402	52292	50175	76687	40643	43164
 GO:0000988	transcription factor activity, protein binding	3437	3825	3548	5088	3623	3556	3406	4181	3324	4103	3450	3506	3221	3837	3341	4066	3474	1671	3250	2934
