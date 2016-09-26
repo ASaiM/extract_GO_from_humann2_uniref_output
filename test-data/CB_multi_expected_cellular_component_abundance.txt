@@ -1,5 +1,4 @@
 GO_id	GO_name	S10E_Abundance	S10PA_Abundance	S1E_Abundance	S1PA_Abundance	S2E_Abundance	S2PA_Abundance	S3E_Abundance	S3PA_Abundance	S4E_Abundance	S4PA_Abundance	S5E_Abundance	S5PA_Abundance	S6E_Abundance	S6PA_Abundance	S7E_Abundance	S7PA_Abundance	S8E_Abundance	S8PA_Abundance	S9E_Abundance	S9PA_Abundance
-
 GO:0005575	cellular_component	20452	19414	24082	21709	22275	20381	21871	21942	20573	23324	16745	17772	18438	20895	20498	23620	24063	53077	19889	18358
 GO:0005618	cell wall	374	353	178	465	193	450	402	541	98	385	284	643	318	466	228	444	226	2066	197	386
 GO:0005634	nucleus	48	75	87	26	40	36	52	47	40	41	71	9	40	27	81	88	61	995	57	47
