@@ -1,5 +1,4 @@
 GO_id	GO_name	S10E_Abundance	S10PA_Abundance	S1E_Abundance	S1PA_Abundance	S2E_Abundance	S2PA_Abundance	S3E_Abundance	S3PA_Abundance	S4E_Abundance	S4PA_Abundance	S5E_Abundance	S5PA_Abundance	S6E_Abundance	S6PA_Abundance	S7E_Abundance	S7PA_Abundance	S8E_Abundance	S8PA_Abundance	S9E_Abundance	S9PA_Abundance
-
 GO:0000160	phosphorelay signal transduction system	7143	7065	7695	9024	8109	7217	6903	8620	7504	7827	5946	7375	5916	6596	6795	9056	6254	10903	5673	6966
 GO:0000746	conjugation	549	530	360	272	514	372	370	376	627	510	598	527	508	378	424	550	605	372	565	453
 GO:0000902	cell morphogenesis	0	0	0	1	0	0	0	0	0	0	0	0	5	1	0	0	1	0	0	0
