@@ -53,9 +53,9 @@ def format_humann2_output(args, go_annotations):
         output_files['molecular_function'] = open(args.molecular_function_output_file,"w")
         output_files['biological_process'] = open(args.biological_processes_output_file,"w")
         output_files['cellular_component'] = open(args.cellular_component_output_file,"w")
-        output_files['molecular_function'].write("GO id\tGO name")
-        output_files['biological_process'].write("GO id\tGO name")
-        output_files['cellular_component'].write("GO id\tGO name")
+        output_files['molecular_function'].write("GO_id\tGO_name")
+        output_files['biological_process'].write("GO_id\tGO_name")
+        output_files['cellular_component'].write("GO_id\tGO_name")
         
         #Allow multiple operations to access humann2_output
         humann2_output_lines = humann2_output.readlines()
